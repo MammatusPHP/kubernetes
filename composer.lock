@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be58bdacf4759a8c59d700f31e51c315",
+    "content-hash": "eda9d65026b8035689bbda89c5de1780",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -253,16 +253,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.7.2",
+            "version": "2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "b826edb791571ab1eaf281eb1bd6e181a1192adc"
+                "reference": "e49be96f3bccd183c9ff1313686c06cf898ba4be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/b826edb791571ab1eaf281eb1bd6e181a1192adc",
-                "reference": "b826edb791571ab1eaf281eb1bd6e181a1192adc",
+                "url": "https://api.github.com/repos/composer/composer/zipball/e49be96f3bccd183c9ff1313686c06cf898ba4be",
+                "reference": "e49be96f3bccd183c9ff1313686c06cf898ba4be",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.7.2"
+                "source": "https://github.com/composer/composer/tree/2.7.3"
             },
             "funding": [
                 {
@@ -363,7 +363,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-11T16:12:18+00:00"
+            "time": "2024-04-19T19:40:57+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -731,67 +731,6 @@
                 }
             ],
             "time": "2024-03-26T18:29:49+00:00"
-        },
-        {
-            "name": "dragonmantank/cron-expression",
-            "version": "v3.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "adfb1f505deb6384dc8b39804c5065dd3c8c8c0a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/adfb1f505deb6384dc8b39804c5065dd3c8c8c0a",
-                "reference": "adfb1f505deb6384dc8b39804c5065dd3c8c8c0a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2|^8.0",
-                "webmozart/assert": "^1.0"
-            },
-            "replace": {
-                "mtdowling/cron-expression": "^1.0"
-            },
-            "require-dev": {
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^1.0",
-                "phpstan/phpstan-webmozart-assert": "^1.0",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cron\\": "src/Cron/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Tankersley",
-                    "email": "chris@ctankersley.com",
-                    "homepage": "https://github.com/dragonmantank"
-                }
-            ],
-            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
-            "keywords": [
-                "cron",
-                "schedule"
-            ],
-            "support": {
-                "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.3"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/dragonmantank",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-08-10T19:36:49+00:00"
         },
         {
             "name": "drupol/composer-packages",
@@ -1548,56 +1487,28 @@
             "time": "2024-04-13T17:07:38+00:00"
         },
         {
-            "name": "mammatus/cron",
-            "version": "dev-list-crons-bin",
+            "name": "mammatus/kubernetes-events",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/MammatusPHP/cron.git",
-                "reference": "c57671efe764f88254a89f3127e4d7767fb70b64"
+                "url": "https://github.com/MammatusPHP/kubernetes-events.git",
+                "reference": "e1bea8365ddbe6b27ad7c7ea2ecec4a037857160"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MammatusPHP/cron/zipball/c57671efe764f88254a89f3127e4d7767fb70b64",
-                "reference": "c57671efe764f88254a89f3127e4d7767fb70b64",
+                "url": "https://api.github.com/repos/MammatusPHP/kubernetes-events/zipball/e1bea8365ddbe6b27ad7c7ea2ecec4a037857160",
+                "reference": "e1bea8365ddbe6b27ad7c7ea2ecec4a037857160",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^2.0",
-                "illuminate/collections": "^8.54 || ^9 || ^10",
-                "mammatus/app": "dev-master",
-                "mammatus/cron-attributes": "^1",
-                "mammatus/cron-contracts": "^1.0.1",
-                "mammatus/life-cycle-events": "^2",
-                "php": "^8.2",
-                "psr/container": "^1.1.2",
-                "psr/log": "^2",
-                "react/async": "^4.2",
-                "roave/better-reflection": "^6.26",
-                "wyrihaximus/broadcast-contracts": "^1.3",
-                "wyrihaximus/list-classes-in-directory": "^1.6",
-                "wyrihaximus/monolog-factory": "^2",
-                "wyrihaximus/psr-3-context-logger": "^2.0",
-                "wyrihaximus/react-cron": "^5",
-                "wyrihaximus/react-mutex-contracts": "^2.3",
-                "wyrihaximus/simple-twig": "^2.1",
-                "wyrihaximus/string-get-in": "^1.1",
-                "wyrihaximus/ticking-promise": "^3.1"
+                "php": "^8.2"
             },
             "require-dev": {
                 "wyrihaximus/async-test-utilities": "^8.0.1"
             },
-            "bin": [
-                "bin/mammatus-cron",
-                "bin/mammatus-cron-list"
-            ],
-            "type": "composer-plugin",
+            "default-branch": true,
+            "type": "library",
             "extra": {
-                "class": "Mammatus\\Cron\\Composer\\Installer",
-                "mammatus": {
-                    "cron": {
-                        "has-actions": true
-                    }
-                },
                 "php-di-definitions": {
                     "di": [
                         "etc/di/*.php"
@@ -1611,7 +1522,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Mammatus\\Cron\\": "src/"
+                    "Mammatus\\Kubernetes\\Events\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1620,102 +1531,10 @@
             ],
             "description": "⏱️ Cron manager",
             "support": {
-                "issues": "https://github.com/MammatusPHP/cron/issues",
-                "source": "https://github.com/MammatusPHP/cron/tree/list-crons-bin"
+                "issues": "https://github.com/MammatusPHP/kubernetes-events/issues",
+                "source": "https://github.com/MammatusPHP/kubernetes-events/tree/main"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-04-15T14:11:19+00:00"
-        },
-        {
-            "name": "mammatus/cron-attributes",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MammatusPHP/cron-attributes.git",
-                "reference": "82b9b1da155d593f5da26f88cf464fcc8828e2b7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MammatusPHP/cron-attributes/zipball/82b9b1da155d593f5da26f88cf464fcc8828e2b7",
-                "reference": "82b9b1da155d593f5da26f88cf464fcc8828e2b7",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "wyrihaximus/test-utilities": "^5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Mammatus\\Cron\\Attributes\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cron attributes",
-            "support": {
-                "issues": "https://github.com/MammatusPHP/cron-attributes/issues",
-                "source": "https://github.com/MammatusPHP/cron-attributes/tree/1.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-23T14:46:41+00:00"
-        },
-        {
-            "name": "mammatus/cron-contracts",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MammatusPHP/cron-contracts.git",
-                "reference": "87e7fc12061d19b7348df42b8b2eec75bded9d72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MammatusPHP/cron-contracts/zipball/87e7fc12061d19b7348df42b8b2eec75bded9d72",
-                "reference": "87e7fc12061d19b7348df42b8b2eec75bded9d72",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "wyrihaximus/test-utilities": "^5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Mammatus\\Cron\\Contracts\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cron contracts",
-            "support": {
-                "issues": "https://github.com/MammatusPHP/cron-contracts/issues",
-                "source": "https://github.com/MammatusPHP/cron-contracts/tree/1.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-23T14:37:16+00:00"
+            "time": "2024-04-20T08:45:32+00:00"
         },
         {
             "name": "mammatus/life-cycle-events",
@@ -2575,78 +2394,6 @@
                 }
             ],
             "time": "2023-11-22T16:43:46+00:00"
-        },
-        {
-            "name": "react/cache",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/cache.git",
-                "reference": "d47c472b64aa5608225f47965a484b75c7817d5b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/d47c472b64aa5608225f47965a484b75c7817d5b",
-                "reference": "d47c472b64aa5608225f47965a484b75c7817d5b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "react/promise": "^3.0 || ^2.0 || ^1.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5 || ^5.7 || ^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "React\\Cache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Lück",
-                    "email": "christian@clue.engineering",
-                    "homepage": "https://clue.engineering/"
-                },
-                {
-                    "name": "Cees-Jan Kiewiet",
-                    "email": "reactphp@ceesjankiewiet.nl",
-                    "homepage": "https://wyrihaximus.net/"
-                },
-                {
-                    "name": "Jan Sorgalla",
-                    "email": "jsorgalla@gmail.com",
-                    "homepage": "https://sorgalla.com/"
-                },
-                {
-                    "name": "Chris Boden",
-                    "email": "cboden@gmail.com",
-                    "homepage": "https://cboden.dev/"
-                }
-            ],
-            "description": "Async, Promise-based cache interface for ReactPHP",
-            "keywords": [
-                "cache",
-                "caching",
-                "promise",
-                "reactphp"
-            ],
-            "support": {
-                "issues": "https://github.com/reactphp/cache/issues",
-                "source": "https://github.com/reactphp/cache/tree/v1.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/reactphp",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2022-11-30T15:59:55+00:00"
         },
         {
             "name": "react/event-loop",
@@ -4436,64 +4183,6 @@
             "time": "2024-04-18T11:59:33+00:00"
         },
         {
-            "name": "webmozart/assert",
-            "version": "1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webmozarts/assert.git",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "php": "^7.2 || ^8.0"
-            },
-            "conflict": {
-                "phpstan/phpstan": "<0.12.20",
-                "vimeo/psalm": "<4.6.1 || 4.6.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5.13"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.10-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Webmozart\\Assert\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@gmail.com"
-                }
-            ],
-            "description": "Assertions to validate method input/output with nice error messages.",
-            "keywords": [
-                "assert",
-                "check",
-                "validate"
-            ],
-            "support": {
-                "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
-            },
-            "time": "2022-06-03T18:03:27+00:00"
-        },
-        {
             "name": "wyrihaximus/broadcast",
             "version": "2.3.1",
             "source": {
@@ -5188,153 +4877,6 @@
             "time": "2022-01-07T16:11:03+00:00"
         },
         {
-            "name": "wyrihaximus/react-cron",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/reactphp-cron.git",
-                "reference": "896444fda233d1a8ed0122a49fc5b230d500597a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-cron/zipball/896444fda233d1a8ed0122a49fc5b230d500597a",
-                "reference": "896444fda233d1a8ed0122a49fc5b230d500597a",
-                "shasum": ""
-            },
-            "require": {
-                "dragonmantank/cron-expression": "^3.3.3",
-                "evenement/evenement": "^3.0",
-                "php": "^8.2",
-                "react/async": "^4.2",
-                "react/event-loop": "^1.5",
-                "react/promise": "^3.1",
-                "thecodingmachine/safe": "^2.4",
-                "wyrihaximus/constants": "^1.6",
-                "wyrihaximus/react-mutex": "^3.2",
-                "wyrihaximus/react-mutex-contracts": "^2.2"
-            },
-            "conflict": {
-                "azjezz/psl": "<2"
-            },
-            "require-dev": {
-                "wyrihaximus/async-test-utilities": "^8.0.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WyriHaximus\\React\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "⏱️ Cronlike scheduler running inside the ReactPHP Event Loop",
-            "support": {
-                "issues": "https://github.com/WyriHaximus/reactphp-cron/issues",
-                "source": "https://github.com/WyriHaximus/reactphp-cron/tree/5.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-04-12T16:21:55+00:00"
-        },
-        {
-            "name": "wyrihaximus/react-mutex",
-            "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/reactphp-mutex.git",
-                "reference": "b38ad7e5b588f064b957d54b78e2346d17538983"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-mutex/zipball/b38ad7e5b588f064b957d54b78e2346d17538983",
-                "reference": "b38ad7e5b588f064b957d54b78e2346d17538983",
-                "shasum": ""
-            },
-            "require": {
-                "ext-random": "^8.2",
-                "php": "^8.2",
-                "react/cache": "^1.1",
-                "react/promise": "^2.8 || ^3.1",
-                "wyrihaximus/react-mutex-contracts": "^2.2",
-                "wyrihaximus/ticking-promise": "^3.1"
-            },
-            "require-dev": {
-                "wyrihaximus/react-mutex-test-utilities": "^3.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WyriHaximus\\React\\Mutex\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Mutex locking for ReactPHP projects",
-            "support": {
-                "issues": "https://github.com/WyriHaximus/reactphp-mutex/issues",
-                "source": "https://github.com/WyriHaximus/reactphp-mutex/tree/3.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-17T17:04:45+00:00"
-        },
-        {
-            "name": "wyrihaximus/react-mutex-contracts",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/reactphp-mutex-contracts.git",
-                "reference": "f26364e212f58ec57805ac908321b85107170116"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-mutex-contracts/zipball/f26364e212f58ec57805ac908321b85107170116",
-                "reference": "f26364e212f58ec57805ac908321b85107170116",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.2",
-                "react/promise": "^3.1"
-            },
-            "require-dev": {
-                "wyrihaximus/async-test-utilities": "^7.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WyriHaximus\\React\\Mutex\\Contracts\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Mutex locking contracts for ReactPHP projects",
-            "support": {
-                "issues": "https://github.com/WyriHaximus/reactphp-mutex-contracts/issues",
-                "source": "https://github.com/WyriHaximus/reactphp-mutex-contracts/tree/2.3.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-17T20:43:12+00:00"
-        },
-        {
             "name": "wyrihaximus/react-psr-3-stdio",
             "version": "3.0.0",
             "source": {
@@ -5387,59 +4929,6 @@
             "time": "2022-01-08T22:27:13+00:00"
         },
         {
-            "name": "wyrihaximus/simple-twig",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/php-simple-twig.git",
-                "reference": "aa0d055c13a25b0318aa55edaea13fe12af15939"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-simple-twig/zipball/aa0d055c13a25b0318aa55edaea13fe12af15939",
-                "reference": "aa0d055c13a25b0318aa55edaea13fe12af15939",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8 || ^7.4",
-                "twig/twig": "^3.3.2"
-            },
-            "require-dev": {
-                "wyrihaximus/test-utilities": "^3.7.3"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
-                "psr-4": {
-                    "WyriHaximus\\Twig\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cees-Jan Kiewiet",
-                    "email": "ceesjank@gmail.com"
-                }
-            ],
-            "description": "🌱 Wrapper around Twig making rendering a string template trivial",
-            "support": {
-                "issues": "https://github.com/WyriHaximus/php-simple-twig/issues",
-                "source": "https://github.com/WyriHaximus/php-simple-twig/tree/2.1.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-09-08T22:05:38+00:00"
-        },
-        {
             "name": "wyrihaximus/string-get-in",
             "version": "1.1.0",
             "source": {
@@ -5488,61 +4977,6 @@
                 }
             ],
             "time": "2021-11-28T14:22:02+00:00"
-        },
-        {
-            "name": "wyrihaximus/ticking-promise",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/TickingPromise.git",
-                "reference": "4dbeb4873718f0427742da05108de647025333c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/TickingPromise/zipball/4dbeb4873718f0427742da05108de647025333c6",
-                "reference": "4dbeb4873718f0427742da05108de647025333c6",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.2",
-                "react/event-loop": "^1.4",
-                "react/promise": "^2.10 || ^3.0"
-            },
-            "require-dev": {
-                "wyrihaximus/async-test-utilities": "^7.2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
-                "psr-4": {
-                    "WyriHaximus\\React\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cees-Jan Kiewiet",
-                    "email": "ceesjank@gmail.com",
-                    "homepage": "http://wyrihaximus.net/"
-                }
-            ],
-            "description": "⏲️ Wrapping ticks into a promise",
-            "support": {
-                "issues": "https://github.com/WyriHaximus/TickingPromise/issues",
-                "source": "https://github.com/WyriHaximus/TickingPromise/tree/3.1.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-11-03T06:34:56+00:00"
         }
     ],
     "packages-dev": [
@@ -13756,6 +13190,64 @@
             "time": "2024-03-11T20:33:46+00:00"
         },
         {
+            "name": "webmozart/assert",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<4.6.1 || 4.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.13"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
+            },
+            "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
             "name": "webmozart/glob",
             "version": "4.7.0",
             "source": {
@@ -13949,16 +13441,16 @@
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
-            "version": "6.0.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper.git",
-                "reference": "e4b43719286e4f5ecd83771293a1a41ffcdeb111"
+                "reference": "b8b4dcf99d96494b42feb5afe1cdea8b5b5b6fbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/e4b43719286e4f5ecd83771293a1a41ffcdeb111",
-                "reference": "e4b43719286e4f5ecd83771293a1a41ffcdeb111",
+                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/b8b4dcf99d96494b42feb5afe1cdea8b5b5b6fbe",
+                "reference": "b8b4dcf99d96494b42feb5afe1cdea8b5b5b6fbe",
                 "shasum": ""
             },
             "require": {
@@ -13967,7 +13459,7 @@
                 "phpstan/phpstan-deprecation-rules": "^1.1.4",
                 "phpstan/phpstan-mockery": "^1.1.2",
                 "phpstan/phpstan-phpunit": "^1.3.16",
-                "phpstan/phpstan-strict-rules": "^1.5.3",
+                "phpstan/phpstan-strict-rules": "^1.5.5",
                 "thecodingmachine/phpstan-safe-rule": "^1.2",
                 "thecodingmachine/phpstan-strict-rules": "^1.0"
             },
@@ -13985,7 +13477,7 @@
             "description": "🌯 PHPStan rules wrapper",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/issues",
-                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/6.0.0"
+                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/6.0.1"
             },
             "funding": [
                 {
@@ -13993,7 +13485,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-08T19:27:48+00:00"
+            "time": "2024-04-20T21:08:05+00:00"
         },
         {
             "name": "wyrihaximus/react-phpunit-run-tests-in-fiber",
@@ -14131,7 +13623,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "mammatus/app": 20,
-        "mammatus/cron": 20
+        "mammatus/kubernetes-events": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
