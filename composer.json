@@ -5,12 +5,12 @@
   "require": {
     "php": "^8.2",
     "mammatus/app": "dev-master",
-    "mammatus/kubernetes-events": "dev-main",
+    "mammatus/kubernetes-events": "^1",
     "psr/event-dispatcher": "^1",
     "thecodingmachine/safe": "^2.5"
   },
   "require-dev": {
-    "wyrihaximus/async-test-utilities": "^8.0.1"
+    "wyrihaximus/async-test-utilities": "^8.0.5"
   },
   "autoload": {
     "psr-4": {
