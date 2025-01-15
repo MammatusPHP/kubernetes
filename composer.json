@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "mammatus/app": "dev-master",
+    "mammatus/app": "dev-introduce-run-tooling",
     "mammatus/kubernetes-events": "^1",
     "psr/event-dispatcher": "^1",
     "thecodingmachine/safe": "^2.5"
