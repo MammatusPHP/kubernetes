@@ -8,9 +8,9 @@ use Mammatus\Kubernetes\Events\Helm\Values;
 use Mammatus\Kubernetes\Events\Helm\Values\Registry;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
-use function Safe\json_encode;
+use function json_encode;
 
-final class Helm
+final readonly class Helm
 {
     public function __construct(private EventDispatcherInterface $eventDispatcher)
     {

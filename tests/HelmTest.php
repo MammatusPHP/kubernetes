@@ -6,18 +6,17 @@ namespace Mammatus\Tests\Kubernetes;
 
 use Mammatus\Kubernetes\Events\Helm\Values;
 use Mammatus\Kubernetes\Helm;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use WyriHaximus\Broadcast\ArrayListenerProvider;
 use WyriHaximus\Broadcast\Dispatcher;
 
 final class HelmTest extends AsyncTestCase
 {
-    /**
-     * @param array<class-string, array<callable>> $listeners
-     *
-     * @test
-     * @dataProvider valuesProvider
-     */
+    /** @param array<class-string, array<callable>> $listeners */
+    #[Test]
+    #[DataProvider('valuesProvider')]
     public function values(string $expectedOutput, array $listeners): void
     {
         self::expectOutputString($expectedOutput);
@@ -38,13 +37,13 @@ final class HelmTest extends AsyncTestCase
         ];
 
         yield 'one' => [
-            '{"a":[true,false]}',
+            '{"a":{"bool":true,"bal":false}}',
             [
                 Values::class => [
                     static function (Values $values): void {
                         $values->registry->add(
                             'a',
-                            [true, false],
+                            ['bool' => true, 'bal' => false],
                         );
                     },
                 ],
@@ -52,19 +51,19 @@ final class HelmTest extends AsyncTestCase
         ];
 
         yield 'two' => [
-            '{"a":[true,false],"b":[true,false]}',
+            '{"a":{"bool":true,"bal":false},"b":{"bool":true,"bal":false}}',
             [
                 Values::class => [
                     static function (Values $values): void {
                         $values->registry->add(
                             'a',
-                            [true, false],
+                            ['bool' => true, 'bal' => false],
                         );
                     },
                     static function (Values $values): void {
                         $values->registry->add(
                             'b',
-                            [true, false],
+                            ['bool' => true, 'bal' => false],
                         );
                     },
                 ],
