@@ -3,14 +3,15 @@
   "description": "⏱️ Cron manager",
   "license": "MIT",
   "require": {
-    "php": "^8.2",
+    "php": "^8.3",
+    "ext-json": "^8.3",
     "mammatus/app": "dev-master",
     "mammatus/kubernetes-events": "^1",
-    "psr/event-dispatcher": "^1",
-    "thecodingmachine/safe": "^2.5"
+    "psr/event-dispatcher": "^1"
   },
   "require-dev": {
-    "wyrihaximus/async-test-utilities": "^8.0.5"
+    "wyrihaximus/async-test-utilities": "^9.1.0",
+    "wyrihaximus/makefiles": "^0.4.2"
   },
   "autoload": {
     "psr-4": {
@@ -35,10 +36,12 @@
       "infection/extension-installer": true,
       "mammatus/cron": true,
       "mindplay/composer-locator": true,
-      "wyrihaximus/broadcast": true
+      "phpstan/extension-installer": true,
+      "wyrihaximus/broadcast": true,
+      "wyrihaximus/makefiles": true
     },
     "platform": {
-      "php": "8.2.13"
+      "php": "8.3.13"
     },
     "sort-packages": true
   },
