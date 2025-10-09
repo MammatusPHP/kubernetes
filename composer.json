@@ -1,17 +1,17 @@
 {
   "name": "mammatus/kubernetes",
-  "description": "⏱️ Cron manager",
+  "description": "\u23f1\ufe0f Cron manager",
   "license": "MIT",
   "require": {
-    "php": "^8.3",
-    "ext-json": "^8.3",
+    "php": "^8.4",
+    "ext-json": "^8.4",
     "mammatus/app": "dev-master",
     "mammatus/kubernetes-events": "^1",
     "psr/event-dispatcher": "^1"
   },
   "require-dev": {
-    "wyrihaximus/async-test-utilities": "^9.1.0",
-    "wyrihaximus/makefiles": "^0.4.2"
+    "wyrihaximus/async-test-utilities": "^10.1.0",
+    "wyrihaximus/makefiles": "^0.7.5"
   },
   "autoload": {
     "psr-4": {
@@ -38,10 +38,11 @@
       "mindplay/composer-locator": true,
       "phpstan/extension-installer": true,
       "wyrihaximus/broadcast": true,
-      "wyrihaximus/makefiles": true
+      "wyrihaximus/makefiles": true,
+      "wyrihaximus/test-utilities": true
     },
     "platform": {
-      "php": "8.3.13"
+      "php": "8.4.13"
     },
     "sort-packages": true
   },
@@ -59,12 +60,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "composer normalize",
-      "composer update --lock --no-scripts"
+      "make on-install-or-update || true"
     ],
     "post-update-cmd": [
-      "composer normalize",
-      "composer update --lock --no-scripts"
+      "make on-install-or-update || true"
     ]
   }
 }

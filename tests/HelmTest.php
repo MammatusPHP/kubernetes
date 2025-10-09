@@ -14,7 +14,7 @@ use WyriHaximus\Broadcast\Dispatcher;
 
 final class HelmTest extends AsyncTestCase
 {
-    /** @param array<class-string, array<callable>> $listeners */
+    /** @param array<string, array<int, callable>> $listeners */
     #[Test]
     #[DataProvider('valuesProvider')]
     public function values(string $expectedOutput, array $listeners): void
@@ -23,7 +23,7 @@ final class HelmTest extends AsyncTestCase
 
         $dispatcher = Dispatcher::createFromListenerProvider(new ArrayListenerProvider($listeners));
 
-        $exitCode = (new Helm($dispatcher))->json();
+        $exitCode = new Helm($dispatcher)->json();
 
         self::assertSame(0, $exitCode);
     }
