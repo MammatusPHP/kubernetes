@@ -2,7 +2,7 @@
 <?php declare(strict_types=1);
 
 use Mammatus\Kubernetes\Helm;
-use Mammatus\ContainerFactory;
+use Mammatus\Container\Factory;
 
 (function(string $_composer_autoload_path) {
     /**
@@ -15,5 +15,5 @@ use Mammatus\ContainerFactory;
     /**
      * Create and run that one cron job
      */
-    exit((static fn (): int => ContainerFactory::create()->get(Helm::class)->json())());
+    exit((static fn (): int => Factory::create()->get(Helm::class)->json())());
 })();
