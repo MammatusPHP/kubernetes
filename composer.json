@@ -6,7 +6,7 @@
     "php": "^8.4",
     "ext-json": "^8.4",
     "mammatus/app": "dev-master",
-    "mammatus/kubernetes-events": "^1",
+    "mammatus/kubernetes-events": "^2.0.0",
     "psr/event-dispatcher": "^1"
   },
   "require-dev": {

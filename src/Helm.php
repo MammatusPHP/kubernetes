@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Mammatus\Kubernetes;
 
+use Mammatus\ExitCode;
 use Mammatus\Kubernetes\Events\Helm\Values;
-use Mammatus\Kubernetes\Events\Helm\Values\Registry;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
 use function json_encode;
@@ -16,13 +16,13 @@ final readonly class Helm
     {
     }
 
-    public function json(): int
+    public function json(string ...$valuesFiles): ExitCode
     {
-        $registry = new Registry();
+        $registry = new Values\Registry(Values\ValuesFile::createFromFile(...$valuesFiles));
         $this->eventDispatcher->dispatch(new Values($registry));
 
         echo json_encode($registry->get());
 
-        return 0;
+        return ExitCode::Success;
     }
 }

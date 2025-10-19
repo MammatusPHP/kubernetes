@@ -25,7 +25,7 @@ final class HelmTest extends AsyncTestCase
 
         $exitCode = new Helm($dispatcher)->json();
 
-        self::assertSame(0, $exitCode);
+        self::assertSame(0, $exitCode->value);
     }
 
     /** @return iterable<array<string|array<class-string, array<callable>>>> */
