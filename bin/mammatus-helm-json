@@ -11,9 +11,9 @@ use Mammatus\Container\Factory;
     require_once $_composer_autoload_path;
 })($_composer_autoload_path);
 
-(static function() {
+(static function(string ...$valuesFiles) {
     /**
      * Create and run that one cron job
      */
-    exit((static fn (): int => Factory::create()->get(Helm::class)->json())());
-})();
+    exit((static fn (): int => Factory::create()->get(Helm::class)->json(...$valuesFiles)->value)());
+})(...array_slice($argv, 1));
