@@ -18,10 +18,14 @@ final readonly class Helm
 
     public function json(string ...$valuesFiles): ExitCode
     {
-        $registry = new Values\Registry(Values\ValuesFile::createFromFile(...$valuesFiles));
-        $this->eventDispatcher->dispatch(new Values($registry));
+        $values = new Values(
+            new Values\Groups(),
+            new Values\Registry(),
+            Values\ValuesFile::createFromFile(...$valuesFiles),
+        );
+        $this->eventDispatcher->dispatch($values);
 
-        echo json_encode($registry->get());
+        echo json_encode($values->get());
 
         return ExitCode::Success;
     }

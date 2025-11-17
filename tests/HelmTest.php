@@ -37,13 +37,17 @@ final class HelmTest extends AsyncTestCase
         ];
 
         yield 'one' => [
-            '{"a":{"bool":true,"bal":false}}',
+            '{"deployments":{"a":{"name":"a","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]}}}',
             [
                 Values::class => [
                     static function (Values $values): void {
-                        $values->registry->add(
-                            'a',
-                            ['bool' => true, 'bal' => false],
+                        $values->add(
+                            new Values\Registry\Deployment(
+                                'a',
+                                'mammatus',
+                                ['bool' => 'bal'],
+                                [],
+                            ),
                         );
                     },
                 ],
@@ -51,19 +55,27 @@ final class HelmTest extends AsyncTestCase
         ];
 
         yield 'two' => [
-            '{"a":{"bool":true,"bal":false},"b":{"bool":true,"bal":false}}',
+            '{"deployments":{"a":{"name":"a","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]},"b":{"name":"b","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]}}}',
             [
                 Values::class => [
                     static function (Values $values): void {
-                        $values->registry->add(
-                            'a',
-                            ['bool' => true, 'bal' => false],
+                        $values->add(
+                            new Values\Registry\Deployment(
+                                'a',
+                                'mammatus',
+                                ['bool' => 'bal'],
+                                [],
+                            ),
                         );
                     },
                     static function (Values $values): void {
-                        $values->registry->add(
-                            'b',
-                            ['bool' => true, 'bal' => false],
+                        $values->add(
+                            new Values\Registry\Deployment(
+                                'b',
+                                'mammatus',
+                                ['bool' => 'bal'],
+                                [],
+                            ),
                         );
                     },
                 ],
