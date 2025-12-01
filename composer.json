@@ -6,7 +6,8 @@
     "php": "^8.4",
     "ext-json": "^8.4",
     "mammatus/app": "dev-master",
-    "mammatus/kubernetes-events": "^2.0.0",
+    "mammatus/groups": "^0.1.1",
+    "mammatus/kubernetes-events": "^3.0.0",
     "psr/event-dispatcher": "^1"
   },
   "require-dev": {
@@ -36,6 +37,7 @@
       "infection/extension-installer": true,
       "mammatus/app": true,
       "mammatus/cron": true,
+      "mammatus/groups": true,
       "mindplay/composer-locator": true,
       "phpstan/extension-installer": true,
       "wyrihaximus/broadcast": true,
