@@ -1,6 +1,6 @@
 {
   "name": "mammatus/kubernetes",
-  "description": "\u23f1\ufe0f Cron manager",
+  "description": "\ud83e\uddf0 Kubernetes related tooling",
   "license": "MIT",
   "require": {
     "php": "^8.4",
