@@ -7,8 +7,14 @@
     "ext-json": "^8.4",
     "mammatus/app": "dev-master",
     "mammatus/groups": "^0.1.1",
-    "mammatus/kubernetes-events": "^3.0.0",
-    "psr/event-dispatcher": "^1"
+    "mammatus/healthz-vhost": "dev-master",
+    "mammatus/http-server": "dev-master",
+    "mammatus/http-server-attributes": "dev-main",
+    "mammatus/http-server-contracts": "dev-master",
+    "mammatus/http-server-webroot": "dev-master",
+    "mammatus/kubernetes-events": "^3.0.1",
+    "nikic/fast-route": "2.0.0-beta1",
+    "psr/event-dispatcher": "^1.0.0"
   },
   "require-dev": {
     "wyrihaximus/async-test-utilities": "^10.7.0",
@@ -38,6 +44,7 @@
       "mammatus/app": true,
       "mammatus/cron": true,
       "mammatus/groups": true,
+      "mammatus/http-server": true,
       "mindplay/composer-locator": true,
       "phpstan/extension-installer": true,
       "wyrihaximus/broadcast": true,
