@@ -10,6 +10,7 @@ use Psr\EventDispatcher\EventDispatcherInterface;
 
 use function json_encode;
 
+/** @api */
 final readonly class Helm
 {
     public function __construct(private EventDispatcherInterface $eventDispatcher)
