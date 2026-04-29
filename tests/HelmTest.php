@@ -14,7 +14,7 @@ use WyriHaximus\Broadcast\Dispatcher;
 
 final class HelmTest extends AsyncTestCase
 {
-    /** @param array<string, array<int, callable>> $listeners */
+    /** @param array<class-string, array<callable>> $listeners */
     #[Test]
     #[DataProvider('valuesProvider')]
     public function values(string $expectedOutput, array $listeners): void
