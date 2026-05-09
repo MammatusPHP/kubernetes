@@ -12,7 +12,7 @@
     "mammatus/http-server-attributes": "dev-main",
     "mammatus/http-server-contracts": "dev-master",
     "mammatus/http-server-webroot": "dev-master",
-    "mammatus/kubernetes-events": "^3.0.1",
+    "mammatus/kubernetes-events": "^3.0.1 || ^4.0.0",
     "nikic/fast-route": "2.0.0-beta1",
     "psr/event-dispatcher": "^1.0.0"
   },
