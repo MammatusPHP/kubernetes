@@ -32,12 +32,12 @@ final class HelmTest extends AsyncTestCase
     public static function valuesProvider(): iterable
     {
         yield 'nothing' => [
-            '[]',
+            '{"deployments":{"app":{"name":"app","command":"mammatus","arguments":["app"],"addOns":[]}}}',
             [],
         ];
 
         yield 'one' => [
-            '{"deployments":{"a":{"name":"a","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]}}}',
+            '{"deployments":{"a":{"name":"a","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]},"app":{"name":"app","command":"mammatus","arguments":["app"],"addOns":[]}}}',
             [
                 Values::class => [
                     static function (Values $values): void {
@@ -55,7 +55,7 @@ final class HelmTest extends AsyncTestCase
         ];
 
         yield 'two' => [
-            '{"deployments":{"a":{"name":"a","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]},"b":{"name":"b","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]}}}',
+            '{"deployments":{"a":{"name":"a","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]},"b":{"name":"b","command":"mammatus","arguments":{"bool":"bal"},"addOns":[]},"app":{"name":"app","command":"mammatus","arguments":["app"],"addOns":[]}}}',
             [
                 Values::class => [
                     static function (Values $values): void {
