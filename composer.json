@@ -6,7 +6,7 @@
     "php": "^8.4",
     "ext-json": "^8.4",
     "mammatus/app": "dev-master",
-    "mammatus/groups": "^0.2.0",
+    "mammatus/groups": "^0.2.0 || ^0.3.0",
     "mammatus/healthz-vhost": "dev-master",
     "mammatus/http-server": "dev-master",
     "mammatus/http-server-attributes": "dev-main",
