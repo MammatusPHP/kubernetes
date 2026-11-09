@@ -1242,6 +1242,7 @@ dir
 directed
 directoryexists
 dirname
+discovery
 disk_free_space
 disk_total_space
 diskfreespace
@@ -1348,6 +1349,7 @@ escapeshellcmd
 evenement
 event-dispatcher
 event-loop
+eventsauce
 every_match
 exactly
 exec
@@ -2518,6 +2520,7 @@ ob_list_handlers
 ob_start
 object
 object-enumerator
+object-hydrator
 object-reflector
 objectequals
 oci_bind_array_by_name
@@ -2865,6 +2868,7 @@ php-di
 php-di-definitions
 php-enum
 php-file-iterator
+php-http
 php-invoker
 php-parallel-lint
 php-parser
@@ -3094,6 +3098,7 @@ random
 random_bytes
 random_int
 range
+ratchet
 rawurldecode
 rawurlencode
 react
@@ -3169,6 +3174,7 @@ revolt
 rewind
 rewindable
 rewinddir
+rfc6455
 rmdir
 rnp_decrypt
 rnp_dump_packets
